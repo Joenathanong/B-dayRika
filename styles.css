@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ffe4e1;
+  font-family: "Arial", sans-serif;
+}
+
+.page {
+  text-align: center;
+  position: relative; /* Menambahkan posisi relatif untuk mengatur posisi tombol */
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  margin-bottom: 20px;
+  overflow: hidden; /* Pastikan tidak ada bagian video yang keluar dari container */
+}
+
+.video-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  font-size: 3em;
+  color: #ff69b4;
+  margin-bottom: 0.5em;
+}
+
+p {
+  font-size: 1.5em;
+  color: #db7093;
+}
+
+button {
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  position: absolute; /* Menggunakan posisi absolut untuk tombol */
+  bottom: 20px; /* Mengatur posisi di bagian bawah */
+  left: 50%; /* Mengatur agar posisi tombol berada di tengah */
+  transform: translateX(-50%); /* Menggeser tombol agar berada di tengah */
+  z-index: 1; /* Menetapkan z-index agar tombol berada di atas video */
+}
+
+/* CSS untuk tombol submit pada form login */
+#submit-button {
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%; /* Lebar tombol 100% dari parent container */
+}
+
+#submit-button:hover {
+  background-color: #db7093;
+}
+
+.login-container {
+  max-width: 300px; /* Lebar maksimum container login */
+  margin: auto; /* Centering container login horizontally */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #db7093;
+}
+
+#play-button {
+  position: absolute;
+  bottom: -30px; /* Menyesuaikan posisi tombol play dan next */
+}
+
+#next-button {
+  position: absolute;
+  bottom: -10px; /* Menyesuaikan posisi tombol play dan next */
+}
+
+#submit-button {
+  position: absolute;
+  bottom: -50px; /* Menyesuaikan posisi tombol play dan next */
+}
+
+#next-button {
+  bottom: -60px; /* Menyesuaikan posisi tombol next */
+}
+
+#progress-container {
+  width: 100%;
+  height: 10px;
+  background-color: #ddd;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#progress-bar {
+  width: 0;
+  height: 100%;
+  background-color: #ff69b4;
+}
+
+@media (min-width: 768px) {
+  .page {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page {
+    width: 70%;
+  }
+}
