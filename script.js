@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Fungsi untuk memeriksa password
   function checkPassword() {
     const passwordInput = document.getElementById("password-input").value;
-    const correctPassword = "4"; // Password yang benar
+    const correctPassword = "5"; // Password yang benar
 
     if (passwordInput === correctPassword) {
       // Jika password benar, tampilkan halaman utama
