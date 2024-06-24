@@ -11,7 +11,9 @@ body {
 
 .page {
   text-align: center;
-  position: relative; /* Menambahkan posisi relatif untuk mengatur posisi tombol */
+  position: relative;
+  width: 100%;
+  max-width: 800px;
 }
 
 .video-container {
@@ -19,7 +21,6 @@ body {
   width: 100%;
   padding-bottom: 56.25%; /* 16:9 aspect ratio */
   margin-bottom: 20px;
-  overflow: hidden; /* Pastikan tidak ada bagian video yang keluar dari container */
 }
 
 .video-wrapper {
@@ -31,11 +32,9 @@ body {
 }
 
 .video-wrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
+  border: none;
 }
 
 h1 {
@@ -58,60 +57,28 @@ button {
   border-radius: 5px;
   cursor: pointer;
   margin-top: 20px;
-  position: absolute; /* Menggunakan posisi absolut untuk tombol */
-  bottom: 20px; /* Mengatur posisi di bagian bawah */
+  position: relative; /* Menambahkan posisi relatif */
   left: 50%; /* Mengatur agar posisi tombol berada di tengah */
   transform: translateX(-50%); /* Menggeser tombol agar berada di tengah */
   z-index: 1; /* Menetapkan z-index agar tombol berada di atas video */
-}
-
-/* CSS untuk tombol submit pada form login */
-#submit-button {
-  background-color: #ff69b4;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  font-size: 1em;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 20px;
-  width: 100%; /* Lebar tombol 100% dari parent container */
-}
-
-#submit-button:hover {
-  background-color: #db7093;
-}
-
-.login-container {
-  max-width: 300px; /* Lebar maksimum container login */
-  margin: auto; /* Centering container login horizontally */
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 button:hover {
   background-color: #db7093;
 }
 
-#play-button {
-  position: absolute;
-  bottom: -30px; /* Menyesuaikan posisi tombol play dan next */
-}
-
-#next-button {
-  position: absolute;
-  bottom: -10px; /* Menyesuaikan posisi tombol play dan next */
-}
-
 #submit-button {
-  position: absolute;
-  bottom: -50px; /* Menyesuaikan posisi tombol play dan next */
+  width: 100%;
+  margin-top: 20px;
 }
 
-#next-button {
-  bottom: -60px; /* Menyesuaikan posisi tombol next */
+.login-container {
+  max-width: 300px;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 #progress-container {
