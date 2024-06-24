@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Mengaitkan fungsi dengan tombol Submit pada halaman password
-  const submitButton = document.querySelector("#password-page button");
+  const submitButton = document.getElementById("submit-button");
   submitButton.addEventListener("click", checkPassword);
 
   // Mengaitkan fungsi dengan tombol-tombol
