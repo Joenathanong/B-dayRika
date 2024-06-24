@@ -1,60 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Happy Birthday Rika</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <!-- Halaman password -->
-    <div id="password-page" class="page">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Rika</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Halaman password -->
+  <div id="password-page" class="page">
+    <div class="login-container">
       <h2>Masukkan password untuk melanjutkan</h2>
       <h2>Berapa wahana yang berhasil Rika Naiki di Dufan?</h2>
       <input type="password" id="password-input" />
       <button id="submit-button" onclick="checkPassword()">Submit</button>
-      <p id="password-error" style="color: red; display: none">
-        Password salah, coba lagi.
-      </p>
+      <p id="password-error" style="color: red; display: none;">Yahh, salah beb.. coba lagi yaa.</p>
     </div>
+  </div>
 
-    <!-- Halaman utama dengan video -->
-    <div id="initial-page" class="page" style="display: none">
-      <div class="video-container">
-        <div class="video-wrapper">
-          <iframe
-            id="video"
-            src="https://www.youtube.com/embed/dI-D0mrktts"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
-        <audio id="initial-sound" src="#"></audio>
+  <!-- Halaman utama dengan video -->
+  <div id="initial-page" class="page" style="display: none;">
+    <div class="video-container">
+      <div class="video-wrapper">
+        <iframe id="video" src="https://www.youtube.com/embed/dI-D0mrktts" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
-      <button id="play-button" onclick="startExperience()">Play</button>
-      <button
-        id="next-button"
-        style="display: none"
-        onclick="showBirthdayPage()"
-      >
-        Next
-      </button>
+      <audio id="initial-sound" src="#"></audio>
     </div>
+    <button id="play-button" onclick="startExperience()">Play</button>
+    <button id="next-button" style="display: none;" onclick="showBirthdayPage()">Next</button>
+  </div>
 
-    <!-- Halaman ucapan ulang tahun -->
-    <div id="birthday-page" class="page" style="display: none">
-      <h1>Happy Birthday, Love!</h1>
-      <p>
-        Wishing you a day filled with love and happiness. You mean the world to
-        me!
-      </p>
-      <audio id="birthday-sound" src="Rika.mp3"></audio>
-      <div id="progress-container" style="display: none">
-        <div id="progress-bar"></div>
-      </div>
+  <!-- Halaman ucapan ulang tahun -->
+  <div id="birthday-page" class="page" style="display: none;">
+    <h1>Happy Birthday, Love!</h1>
+    <p>Wishing you a day filled with love and happiness. You mean the world to me!</p>
+    <audio id="birthday-sound" src="Rika.mp3"></audio>
+    <div id="progress-container" style="display: none;">
+      <div id="progress-bar"></div>
     </div>
+  </div>
 
-    <script src="script.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
 </html>
